@@ -80,6 +80,10 @@ Here is the available option:
 
 This project is under the [MIT License](https://mit-license.org/).
 
+## Copyright
+
+Beijing Jiovan Technology Ltd.
+
 ## Website
 
 - Jiovan: [https://jiovan.com](https://jiovan.com)
