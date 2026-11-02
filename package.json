@@ -1,10 +1,10 @@
 {
-    "name": "@yookue/babel-plugin-remove-comment",
-    "version": "0.2.0",
-    "title": "BabelPluginRemoveComment",
+    "name": "@jiovan-labs/babel-plugin-remove-comment",
+    "version": "2.0.0",
+    "title": "Babel Plugin Remove Comment",
     "description": "Removes script comments during babel compilation",
-    "homepage": "https://yookue.github.io/babel-plugin-remove-comment",
-    "organization": "Yookue Ltd",
+    "homepage": "https://jiovan-labs.github.io/babel-plugin-remove-comment",
+    "organization": "Jiovan Ltd",
     "private": false,
     "license": "MIT",
     "keywords": [
@@ -19,59 +19,60 @@
     "types": "dist/cjs/index.d.ts",
     "sideEffects": false,
     "scripts": {
+        "approve": "npm approve-scripts --allow-scripts-pending",
         "build": "del-cli ./dist && tsc --outDir ./dist/cjs",
         "docs:build": "typedoc --out ./docs-dist",
         "docs:publish": "gh-pages -d ./docs-dist",
         "lint": "eslint \"{src,test}/**/*.{js,jsx,ts,tsx}\"",
         "test": "jest",
-        "test:coverage": "del-cli ./coverage && jest --coverage --coverageDirectory ./coverage"
+        "test:coverage": "del-cli ./coverage && jest --coverage --coverageDirectory ./coverage",
+        "upgrade": "npx npm-check-updates --target semver -u"
     },
     "devDependencies": {
-        "@babel/preset-env": "^7.26.0",
-        "@eslint/eslintrc": "^3.1.0",
-        "@eslint/js": "^9.14.0",
+        "@babel/preset-env": "^7.29.7",
+        "@eslint/js": "^10.0.1",
         "@types/babel__core": "^7.20.5",
-        "@types/jest": "^29.5.14",
-        "@typescript-eslint/eslint-plugin": "^8.13.0",
-        "@yookue/typedoc-plugin-raw-content": "^0.2.2",
-        "del-cli": "^6.0.0",
-        "gh-pages": "^6.2.0",
-        "globals": "^15.12.0",
-        "ts-jest": "^29.2.5",
-        "typedoc": "^0.26.11",
-        "typescript": "^5.6.3"
+        "@types/jest": "^30.0.0",
+        "del-cli": "^7.0.0",
+        "eslint": "^10.14.0",
+        "eslint-plugin-jest": "^29.17.0",
+        "gh-pages": "^6.3.0",
+        "globals": "^17.13.0",
+        "ts-jest": "^29.4.15",
+        "typedoc": "~0.28.20",
+        "typescript": "^6.0.3",
+        "typescript-eslint": "^8.72.1"
     },
     "peerDependencies": {
-        "typescript": ">= 4"
+        "typescript": ">=4.0.0"
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/yookue/babel-plugin-remove-comment.git"
+        "url": "git+https://github.com/jiovan-labs/babel-plugin-remove-comment.git"
     },
     "bugs": {
-        "url": "https://github.com/yookue/babel-plugin-remove-comment/issues"
+        "url": "https://github.com/jiovan-labs/babel-plugin-remove-comment/issues"
     },
     "publishConfig": {
         "access": "public",
-        "registry": "https://registry.npmjs.org/"
+        "registry": "https://registry.npmjs.org"
     },
     "collective": {
-        "url": "https://opencollective.com/yookue-awesome"
+        "url": "https://opencollective.com/jiovan-labs"
     },
     "funding": [
         {
             "type": "opencollective",
-            "url": "https://opencollective.com/yookue-awesome"
+            "url": "https://opencollective.com/jiovan-labs"
         },
         {
             "type": "individual",
-            "url": "https://yookue.com/public/donate"
+            "url": "https://jiovan.com/donation"
         }
     ],
     "author": {
-        "name": "Yookue Ltd",
-        "email": "yookue@outlook.com",
-        "url": "https://yookue.com"
+        "name": "Jiovan Ltd",
+        "url": "https://jiovan.com"
     },
     "contributors": [
         {
@@ -79,5 +80,9 @@
             "email": "davidhsing@163.com",
             "url": "https://github.com/davidhsing"
         }
-    ]
+    ],
+    "allowScripts": {
+        "fsevents": true,
+        "unrs-resolver": true
+    }
 }

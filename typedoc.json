@@ -1,5 +1,5 @@
 {
-    "name": "BabelPluginRemoveComment",
+    "name": "Babel Plugin Remove Comment",
     "entryPoints": [
         "src/index.ts"
     ],
@@ -8,27 +8,14 @@
     "excludeInternal": true,
     "excludePrivate": true,
     "excludeProtected": true,
-    "hideGenerator": true,
-    "highlightLanguages": [
-        "bash",
-        "html",
-        "js",
-        "json",
-        "jsx",
-        "ts"
+    "excludeNotDocumented": true,
+    "excludeNotDocumentedKinds": [
+        "ConstructorSignature"
     ],
+    "hideGenerator": true,
     "includeVersion": false,
     "navigationLinks": {
-        "GitHub": "https://github.com/yookue/babel-plugin-remove-comment",
-        "Yookue": "https://yookue.com"
-    },
-    "plugin": [
-        "@yookue/typedoc-plugin-raw-content"
-    ],
-    "rawHeadEnds": [
-        "<meta name='keywords' content='typedoc, yookue, babel-plugin-remove-comment'/>"
-    ],
-    "rawFooterEnds": [
-        "<div style='text-align: center'>Copyright &copy; 2024 Yookue Ltd. All rights reserved</div>"
-    ]
+        "GitHub": "https://github.com/joivan-labs/babel-plugin-remove-comment",
+        "Jiovan": "https://joivan.com"
+    }
 }
